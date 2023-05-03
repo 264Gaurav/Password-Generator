@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="contain">
+    <div id="head">
+        <nav>
+            <ul class="flex  py-4 bg-gradient-to-r from-indigo-500">
+                <h1 id="" class=" text-2xl font-bold text-white">Password Generator App</h1>
+                <li class="mx-8 text-white text-2xl">Home</li>
+                <li class="mx-4 text-white text-2xl">Helps</li>
+                <li class="mx-4 text-white text-2xl">Contact Us</li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="pw-container">
+
+            <div class="pw-header">
+                <div class="pw">
+                    <span id="pw"> Your Password is : </span>
+                    <button id="copy">Copy Password</button>
+                </div>
+            </div>
+
+            <div class="pw-body">
+                <div class="form-control">
+                    <lable for="length">Length of the Password</lable>
+                    <!-- <input id="len" value="10" type="number" min="8" max="30"> -->
+                    <input id="pass" value="8" type="number" placeholder="password lenght">
+                </div>
+                <div class="form-control">
+                    <lable for="upper">Contain Uppercase Letters</lable>
+                    <input id="upper" type="checkbox" checked>
+                </div>
+                <div class="form-control">
+                    <lable for="lower">Contain Lowercase Letters</lable>
+                    <input id="lower" type="checkbox" checked>
+                </div>
+                <div class="form-control">
+                    <lable for="number">Contain Numbers </lable>
+                    <input id="number" type="checkbox" checked>
+                </div>
+                <div class="form-control">
+                    <lable for="symbol">Contain Symbols</lable>
+                    <input id="symbol" type="checkbox" checked>
+                </div>
+
+                <button class="generate" id="generate">Generate Password</button>
+            </div>
+
+    </div>
+
+</div>
+    
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</body>
+</html>
